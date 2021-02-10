@@ -1,0 +1,13 @@
+1. What is Node.js and what is it used for
+2. What is event driven programming
+3. What is an event loop in Node.js work? And how does it work?
+4. What is REPL in Node.js?
+5. What is the purpose of module.exports in Node.js?
+6. What is the difference between Asynchronous and non-blocking?
+7. What is Tracing in Node.js?
+8. How will you debug an application in Node.js?
+9. Difference between setImmediate() & setTimeout()?
+10. What is process.nextTick()?
+11. What is package.json? What is it used for?
+12. What is livub?
+13.
