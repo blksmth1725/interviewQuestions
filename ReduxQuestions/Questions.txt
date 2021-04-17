@@ -1,0 +1,59 @@
+1. What is Redux?
+    - Redux is a Javascript library for managing application level state
+2. Why do we use redux?
+    - Redux provides a way to centralize the state of your application.
+    - Eliminates the need to lift state within your application.
+3. How do you gain access to redux functionality?
+    - You can install it via NPM or YARN =>
+      - npm i redux
+      - yarn add redux
+4. What are the redux core principles?
+    - Single source of truth => The state of your application is stored in 
+      an object tree, called Store
+    - State is read only => The only way to change the state is to dispatch
+      an action, an object which describes what happened
+    - Changes are made with pure functions => To specify how the state tree 
+      is transformed by actions, you write Reducers.
+5. Describe the redux workflow
+    - Store => Redux offers a solution for storing all your applications 
+      in one place, called the store.
+    - Action => Actions can be dispatched based on an EVENT (OnClick, OnChange, etc).
+    - Reducer => Reducers are pure functions which take the previous state and an action,
+      and return next state. (Always returning a new state object instead of mutating  
+      the previous state)
+    - Subscribe => Any components can easily Subscribe to the store.
+    - In Redux components don't communicate directly with eachother, but rather all 
+      state changes must go through the single source of truth, the store.
+6.  What are actions?
+    - Actions are plain javascript objects and they must have a "type" property to 
+      indicate the type of action to be carried out.
+    - They must also have a payload that contains the information that should be 
+      worked on by the action.
+    - Actions are dispatched using the store.dispatch() method.
+7. What is an Action Creator?
+    - An action creator is simply a function that returns an action object.
+8. What is a provider?
+    - The provider is the component that has a referene ti the Store and provides data
+      from the store to the component it wraps.
+9. What is a pure function?
+    - A pure function is a function which =>
+        - Always returns the same output given the same input
+        - Has no side effects, in other words doesn't change external state.
+10. How do you access the redux store outside of a react component?
+    - You can export the store from the module you called createStore.
+11. What is middleware? Why is middleware used in redux?
+    - Middleware is implemented for extended functionality.
+    - The time between dispatching an action and the moment it reaches a Reducer
+      is where middleware is applied.
+12. What is applyMiddleware?
+    - A store enhancer that applies the given middleware.
+13. What is Redux-Thunk? Why do we need it?
+    - Redux-Thunk is a middleware and it allows you to write action creators that
+      return a fucntion instead of an action.
+    - The thunks can be used to delay the dispatch of an action, or to dispatch 
+      only if a certain condition is met.
+14. State the differences between: redux, react-redux, redux-thunk, redux-saga.
+    - redux => main core redux library (independent from react)
+    - react-redux => connects redux store with react components.
+    - redux-thunk => a redux middleware which helps you with async actions.
+    - redux-saga => a redux middleware library to handle asynchronous actions
