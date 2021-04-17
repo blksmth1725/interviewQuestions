@@ -22,9 +22,10 @@
 5. What are classes in javascript?
     Classes are syntactic sugar for JS contructor functions 
     Provide a new way of declaring constructor functions in JavaScript
-    
-6. What are generator functions?
-7. Explain WeakSet in javascript.
-8. Explain WeakMap in javascript.
-9. What is Object Destructuring?
-10. What is a Temporal Dead Zone?
+6. What is Object Destructuring?
+    Object destructoring is a new way to extract elements from an object or an array.
+    *refer to example file*
+7. What is a Temporal Dead Zone?
+    Is the name of behavior that occurs when using let and const in the instances that
+    we try to access a variable before it is initailized.
+    This usually results in a reference error during runtime.
