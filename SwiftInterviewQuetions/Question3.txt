@@ -1,0 +1,38 @@
+This code sorts an array allphabeticaly. Simplify the closure as
+much as possible
+
+--------------------------------------------------------------
+var animals = ["fish", "cat", "chicken", "dog"]
+animals.sort { (one: String, two: String) -> Bool in
+    return one < two
+}
+print(animals)
+--------------------------------------------------------------
+
+The type inference system automatically calculates both of the type of
+parameters in the closure and the return type, so you can get rid of 
+them:
+
+--------------------------------------------------------------
+animals.sort { (one, two) in return one < two }
+--------------------------------------------------------------
+
+You can substitue the $i notation for the parameters names:
+
+--------------------------------------------------------------
+animals.sort { return $0 < $1 }
+--------------------------------------------------------------
+
+In single statement closures, you can omit the return keyword. The 
+value of the last statement becomes the return value of the closure:
+
+--------------------------------------------------------------
+animals.sort { $0 < $1 }
+--------------------------------------------------------------
+
+Finally, since Swift knows that the elements of the array conform to
+Equatable, you can simply write:
+
+--------------------------------------------------------------
+animals.sort(by: <)
+--------------------------------------------------------------
