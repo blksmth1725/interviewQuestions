@@ -1,0 +1,19 @@
+You've declared view1 with var, and you've declared view2 with let.
+What's the difference? And will the last line compile?
+--------------------------------------------------------------
+var view1 = UIView()
+view1.alpha = 0.5
+
+let view2 = UIView()
+view2.alpha = 0.5
+--------------------------------------------------------------
+Yes, the last line will compile.
+view1 is a variable and you can reassign it to a new instance of UIView.
+With let, you can only assign a value once, so the following code would not 
+compile:
+--------------------------------------------------------------
+view2 = view1
+--------------------------------------------------------------
+However, UIView is a class with reference semantics,
+so you can mutate the properties of view2 - which means the last line will
+compile.
