@@ -31,3 +31,10 @@ types:
 - Portals:
 - Strings and Numbers:
 - Boolean or Null:
+
+---------------------------------------------------------------------------------------
+Explanation => consntructor() =>
+
+* IF YOU DO NOT INITIALZE STATE AND YOU DO NOT BIND METHODS... YOU DO NOT NEED TO *
+* IMPLEMENT THE constructor() METHOD IN YOUR COMPONENT (CLASS) *
+

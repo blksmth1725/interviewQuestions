@@ -1,0 +1,40 @@
+Q1) What is setCount in the next code snippet example =>
+    - const [count, setCount] = useState(0)
+    Answer =>
+    - A function to update the state.
+
+Q2) When using a portal what is the firts argument? =>
+    - ReactDOM.createPortal(x,y)
+    Answer =>
+    - The element to be rendered
+
+Q3) Given the code below what does the second argument to the
+    render method represent =>
+    - ReactDOM.render(<h1>hi</h1>, document.getElementById("root"))
+    Answer =>
+    - Where the React element should be added to the DOM
+
+Q4) Which class-based lifecycle method would be called at the same 
+    time as this useEffect hook, and why =>
+    - useEffect(() => {
+        //... some code here...
+    },[])
+    Answer =>
+    - componentDidMount(), because the second argument to the useEffect() hook 
+      is an empty array of dependencies.
+Q5)
+Q6)
+Q7)
+Q8)
+Q9)
+Q10)
+Q11)
+Q12)
+Q13)
+Q14)
+Q15)
+Q16)
+Q17)
+Q18)
+Q19)
+Q20)
