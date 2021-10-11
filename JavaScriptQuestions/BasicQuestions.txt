@@ -14,7 +14,7 @@
 
 2.Explain Hoisting in Javascript.
     Hoisting is Javascripts default behavior of moving all Variable and 
-    Fucntion declarations to the top of the current scope. (both local 
+    Function declarations to the top of the current scope. (both local 
     and global)
 
 3.Difference between "==" and "===" operators.
@@ -22,7 +22,7 @@
     typeOf, while "===" checks for value && typeOf.
 
 4.Explain implicit type Coercion in Javascript.
-    The automatic conversion of value from one datatype to another.
+    The automatic conversion of a value's type from one datatype to another.
     This tends to happen with "+" operator: When an Integer is added
     to a String the number type will always be converted to a String 
     as well. However, when using the "-" operartor the variable with 

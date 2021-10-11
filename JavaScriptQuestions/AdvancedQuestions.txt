@@ -13,7 +13,7 @@
     - See AdvancedExamples.js
 4. What is the use of promises in javascript?
     Promises are used to handle asynchronous operations in JavaScript.
-    Before promises, callbacks were used to handle asynchronous operations in J   vaScript. Due to the limited functionality of a callback promises were introduced to make code more managable and readable.
+    Before promises, callbacks were used to handle asynchronous operations in JavaScript. Due to the limited functionality of a callback promises were introduced to make code more managable and readable.
     PROMISES HAVE 4 STATES:
     - Pending - initial state of promise. This state represents that the promise has neither been fufilled nor rejected, it is in a pending state.
     - Fulfilled - meaning the aysnchronous operation is completed
