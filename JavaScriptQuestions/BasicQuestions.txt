@@ -62,6 +62,12 @@
 12. What is Currying in javascript?
 
 13. Explain Scope and Scope Chain in javascript.
+    Scope refers to the accessibility or visibility of a variable.
+    The scope chain refers to the proccess of javascript looking 
+    for a varible that is being used within a given scope. If the
+    JS engine doesn't find the varibale in said scope it will differ
+    to the (next) outter scope (in the scope chain) and will continue
+    this proccess all the way up to the global scope.
 
 14. Explain Closures in JavaScript.
     Closure is the ability of a function to remeber variables and functions that are 
