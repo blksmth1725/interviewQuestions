@@ -22,8 +22,11 @@ Q4) Which class-based lifecycle method would be called at the same
     Answer =>
     - componentDidMount(), because the second argument to the useEffect() hook 
       is an empty array of dependencies.
-Q5)
-Q6)
+Q5) Why should you use React's ReactRouter <Link> instead of an <a> tag =>
+    Answer =>
+    - Because an <a> tag will trigger a full page reload, while a <Link> 
+      component does not.
+Q6) 
 Q7)
 Q8)
 Q9)
