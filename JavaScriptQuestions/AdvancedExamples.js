@@ -2,7 +2,7 @@
 
 //Regular function
 function add1(a, b) {
- return a + b;
+  return a + b;
 }
 //Arrow function
 const add2 = (a, b) => a + b;
@@ -12,15 +12,15 @@ console.log(add2(5, 3));
 
 //Handling the "this" keyword
 const obj1 = {
- valueOfthis: function () {
-  return this;
- },
+  valueOfthis: function () {
+    return this;
+  },
 };
 
 const obj2 = {
- valueOfthis: () => {
-  return this;
- },
+  valueOfthis: () => {
+    return this;
+  },
 };
 
 console.log(obj1.valueOfthis());
@@ -28,7 +28,7 @@ console.log(obj2.valueOfthis());
 
 //Const
 const x = {
- name: "christian",
+  name: "christian",
 };
 x.name = "Lindsey";
 console.log(x.name); //you can change the value of a property but cannot change the variable itself
@@ -37,7 +37,7 @@ console.log(x.name); //you can change the value of a property but cannot change 
 const args = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function extractingArgs(...args) {
- return args[4];
+  return args[4];
 }
 
 console.log(extractingArgs(...args));
@@ -47,13 +47,41 @@ console.log(extractingArgs(...args));
 const newArgs = [77, 11, 45, 10, 5, 63, -11];
 
 function addAllArgs(...newArgs) {
- let sum = 0;
- let i = 0;
- while (i < newArgs.length) {
-  sum += newArgs[i];
-  i++;
- }
- return sum;
+  let sum = 0;
+  let i = 0;
+  while (i < newArgs.length) {
+    sum += newArgs[i];
+    i++;
+  }
+  return sum;
 }
 
 console.log(addAllArgs(...newArgs));
+
+let skills = [
+  "Javascript",
+  "React",
+  "Express",
+  "Redux",
+  "Graphql",
+  "Swift",
+  "SwiftUI",
+  "HTML",
+  "CSS",
+  "NodeJS",
+  "MongoDB",
+  "Mongoose",
+];
+
+let filteredSkillsM = skills.filter((el) => {
+  return el.toLocaleLowerCase().startsWith("r") ? el : null;
+});
+
+console.log(filteredSkillsM);
+
+let firstLetterArray = skills.reduce((acc, skill) => {
+  const firstLetter = skill.split("").map((el) => el);
+  return [...acc, firstLetter[0]];
+}, []);
+
+console.log(firstLetterArray);
