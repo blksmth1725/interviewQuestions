@@ -80,8 +80,14 @@ let filteredSkillsM = skills.filter((el) => {
 console.log(filteredSkillsM);
 
 let firstLetterArray = skills.reduce((acc, skill) => {
-  const firstLetter = skill.split("").map((el) => el);
-  return [...acc, firstLetter[0]];
+  // const firstLetter = skill.split("").map((el) => el);
+  return [...acc, skill[0]];
 }, []);
 
-console.log(firstLetterArray);
+const myMap = (arr, func) => {
+  return arr.reduce((acc, cur) => {
+    return [...acc, func(cur)];
+  }, []);
+};
+
+console.log(myMap(skills, (str) => str[0]));
