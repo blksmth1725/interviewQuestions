@@ -90,4 +90,33 @@ const myMap = (arr, func) => {
   }, []);
 };
 
-console.log(myMap(skills, (str) => str[0]));
+console.log(myMap(skills, (str) => str.toUpperCase()));
+
+// Build a map function without using loops or the map method
+let skills = [
+  "Javascript",
+  "React",
+  "Express",
+  "Redux",
+  "Graphql",
+  "Swift",
+  "SwiftUI",
+  "HTML",
+  "CSS",
+  "NodeJS",
+  "MongoDB",
+  "Mongoose",
+];
+
+let filteredSkillsM = skills.filter((el) => {
+  return el.toLocaleLowerCase().startsWith("r") ? el : null;
+});
+
+console.log(filteredSkillsM);
+
+let firstLetterArray = skills.reduce((acc, skill) => {
+  const firstLetter = skill.split("").map((el) => el);
+  return [...acc, firstLetter[0]];
+}, []);
+
+console.log(firstLetterArray);
